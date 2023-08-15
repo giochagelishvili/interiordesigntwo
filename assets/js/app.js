@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Owl carousel
     $(".owl-carousel").owlCarousel({
         //Basic Speeds
-        slideSpeed : 200,
+        slideSpeed : 800,
         paginationSpeed : 800,
      
         //Autoplay
@@ -11,14 +11,14 @@ $(document).ready(function() {
         goToFirstSpeed : 1000,
      
         // Navigation
-        navigation : false,
-        navigationText : ["prev","next"],
+        navigation : true,
+        navigationText : ["<",">"],
         pagination : true,
-        paginationNumbers: true,
+        paginationNumbers: false,
      
         // Responsive
         responsive: true,
-        items : 1,
+        items : 2,
         itemsDesktop : [1199,4],
         itemsDesktopSmall : [980,3],
         itemsTablet: [768,2],

@@ -377,3 +377,261 @@ the left side of paragraph container */
 .arrow-container .fa-arrow-up, .arrow-container .fa-arrow-down {
     font-size: 2.6rem;
 }
+
+.owl-carousel, .right {
+    display: none !important;
+}
+
+/* ------------------------- */
+/* TABLET SCREEN BREAKPOINT */
+/* ----------------------- */
+@media screen and (min-width: 768px) {
+    /* Increase padding of header */
+    header {
+        padding: 3rem 3rem 3rem 0;
+    }
+
+    /* Increase padding of button container */
+    .header-btn-div {
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+    }
+
+    /* Increase size of account icon */
+    .sign-up-btn-div span {
+        font-size: 3.4rem;
+    }
+
+    /* Increase font size of login and sign up buttons */
+    .sign-up-link, .log-in-link {
+        font-size: 2.4rem;
+    }
+
+    /* Increase size of hamburger menu icon */
+    .hamburger-menu-icon {
+        font-size: 5.5rem;
+    }
+
+    /* Increase font size of nav link */
+    .nav-link {
+        font-size: 2.8rem;
+    }
+
+    /* Increase margin top of navigation items */
+    .nav-menu li {
+        margin-top: 2rem;
+    }
+
+    /* Increase size of social media icons */
+    .soc-media-link {
+        font-size: 3.2rem;
+    }
+
+    /* Increase font size of interior design portfolio heading */
+    .interior-design-portfolio {
+        font-size: 2.2rem;
+        margin: 3rem 2.5rem;
+    }
+
+    /* Increase font size and margin of motto */
+    .motto {
+        font-size: 3.2rem;
+        margin-top: 4rem;
+    }
+
+    /* Increase font size and margin for nothing impossible heading */
+    .nothing-impossible {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+
+    /* Increase margin top of paragraph container */
+    .paragraph-container {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    /* Increase font size of paragraph text */
+    .paragraph-container p {
+        font-size: 2rem;
+    }
+
+    /* Increase font size of delve into my portfolio text */
+    .delve-into-portfolio {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    /* Increase font size and padding of swipe down button */
+    .swipe-down {
+        font-size: 2.6rem;
+        padding: 1.5rem 4rem;
+    }
+
+    /* Make mobile carousel disappear */
+    .mobile-carousel {
+        display: none !important;
+    }
+
+    /* Make owl carousel appear */
+    .owl-carousel {
+        display: block !important;
+        margin-top: 4rem;
+    }
+
+    /* Center villa images */
+    .img-container {
+        margin: 0 auto;
+    }
+
+    /* Make owl controls appear (pagination and arrows) */
+    .owl-controls {
+        display: block !important;
+        margin-top: 2rem !important;
+    }
+
+    /* Pagination styles */
+    .owl-theme .owl-controls .owl-page span {
+        background: #fff;
+        opacity: 1;
+    }
+
+    /* Active pagination style */
+    .active span {
+        background: #F2D519 !important;
+    }
+
+    /* Left and right arrow styles */
+    .owl-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0 2rem 0 !important; 
+    }
+
+    .owl-buttons div {
+        font-size: 3.2rem !important;
+        background: #fff !important;
+        color: #232323 !important;
+        opacity: 1 !important;
+    }
+}
+
+/* -------------------------- */
+/* DESKTOP SCREEN BREAKPOINT */
+/* ------------------------ */
+@media screen and (min-width: 1280px) {
+    .sign-up-link, .log-in-link, .soc-media-link,
+    .right, .img-container, .owl-prev, .owl-next,
+    .owl-page span, .nav-link {
+        transition: 0.2s ease-in-out !important;
+    }
+
+    /* Appear Swipe Right button */
+    .right {
+        display: block !important;
+    }
+
+    /* Disappear Swipe Down button */
+    .swipe-down {
+        display: none;
+    }
+
+    /* Hide overflow x */
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* Disappear hamburger menu icon */
+    .hamburger-menu-icon {
+        display: none !important;
+    }
+
+    /* Change direction of header flex */
+    header {
+        flex-direction: row;   
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Adjust the width of header visible container */
+    .header-visible {
+        width: 60%;
+    }
+
+    /* Appear nav menu */
+    .nav-menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove margin of nav items */
+    .nav-menu li {
+        margin: 0 !important;
+    }
+
+    /* Adjust gap of navigation links */
+    .nav-link {
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .nav-link:hover {
+        color: #F2D519;
+    }
+
+    /* Adjust width of line */
+    .line {
+        width: 6.9rem !important;
+        flex: none;
+    }
+
+    /* Login and signup button hover effects */
+    .sign-up-link:hover, .log-in-link:hover {
+        color: #212121;
+    }
+
+    /* Social media icon hover effects */
+    .soc-media-link:hover {
+        color: #F2D519;
+    }
+
+    /* Swipe right button hover */
+    .right:hover {
+        transform: translateX(10px);
+    }
+
+    /* Image hover styles */
+    .img-container:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    /* Pagination styles */
+    .owl-page span:hover {
+        background: rgba(242,213,25,0.80) !important;
+    }
+
+    /* Left and right button styles */
+    .owl-prev:hover, .owl-next:hover {
+        background: none !important;
+        color: #fff !important;
+        border: 1px solid #fff !important;
+    }
+
+    /* Change direction of content container */
+    .content-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    /* Adjust width of text and carousel containers */
+    .text-container, .owl-carousel {
+        max-width: 50%;
+    }
+}
