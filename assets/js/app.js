@@ -17,6 +17,8 @@ $(document).ready(function() {
     ScrollReveal().reveal('.swipe-down-container', { origin: 'left' });
     ScrollReveal().reveal('.owl-carousel', { origin: 'left' });
     ScrollReveal().reveal('.mobile-carousel', { origin: 'left' });
+    ScrollReveal().reveal('.bg-circle', { origin: 'bottom' });
+    ScrollReveal().reveal('.bg-line', { origin: 'right' });
     ScrollReveal().reveal('.nav-menu li', { origin: 'top', interval: 300 });
     
     // Owl carousel
