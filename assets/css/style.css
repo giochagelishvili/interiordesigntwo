@@ -559,14 +559,14 @@ the left side of paragraph container */
 
     /* Adjust the width of header visible container */
     .header-visible {
-        width: 60%;
+        width: 30%;
     }
 
     /* Appear nav menu */
     .nav-menu {
         display: flex !important;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         gap: 2rem;
         margin: 0;
         padding: 0;
@@ -575,6 +575,7 @@ the left side of paragraph container */
     /* Remove margin of nav items */
     .nav-menu li {
         margin: 0 !important;
+        width: auto;
     }
 
     /* Adjust gap of navigation links */
