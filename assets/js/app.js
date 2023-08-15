@@ -71,7 +71,7 @@ $(document).ready(function() {
             activeIndex = 4;
         }
 
-        $.getJSON('data.json', function(data) {
+        $.getJSON('../data.json', function(data) {
             let src=data[imgId]['src'];
               // Fade out the current image
             $('.carousel-img').fadeOut('150', function() {
