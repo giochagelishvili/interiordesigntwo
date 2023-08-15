@@ -6,6 +6,8 @@ $(document).ready(function() {
         delay: 200
     });
 
+    var viewportWidth = $(window).width();
+
     ScrollReveal().reveal('.header-btn-div', { origin: 'left' });
     ScrollReveal().reveal('.hamburger-menu-icon', { origin: 'right' });
     ScrollReveal().reveal('.sidebar-menu li', { interval: 200 });
@@ -19,7 +21,10 @@ $(document).ready(function() {
     ScrollReveal().reveal('.mobile-carousel', { origin: 'left' });
     ScrollReveal().reveal('.bg-circle', { origin: 'bottom' });
     ScrollReveal().reveal('.bg-line', { origin: 'right' });
-    ScrollReveal().reveal('.nav-menu li', { origin: 'top', interval: 300 });
+    
+    if (viewportWidth > 1280) {
+        ScrollReveal().reveal('.nav-menu li', { origin: 'top', interval: 300 });
+    }
     
     // Owl carousel
     $(".owl-carousel").owlCarousel({
