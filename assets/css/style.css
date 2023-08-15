@@ -1,0 +1,379 @@
+/* Google icons / material symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 10px = 1rem */
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    min-height: 100vh;
+
+    background: #212121;
+}
+
+/* -------------- */
+/* HEADER STYLES */
+/* ------------ */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-bottom: 2px solid #fff;
+
+    width: 100%;
+    padding: 2rem 2rem 2rem 0;
+}
+
+/* Visible part of header on mobile devices */
+/* Sign up / login and hamburger menu button's container */
+.header-visible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Sign up and login buttons container */
+.header-btn-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background: #F2D519;
+    padding: 1rem 2rem 1rem 1rem;
+
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    -webkit-box-shadow:0px 0px 20px 3px rgba(242,213,25,0.40);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(242,213,25,0.40);
+    box-shadow: 0px 0px 20px 3px rgba(242,213,25,0.40);
+}
+
+/* Divider line between sign up and log in buttons */
+.header-btn-div span {
+    font-size: 1.8rem;
+}
+
+/* Sign up button container */
+.sign-up-btn-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Account icon */
+.sign-up-btn-div span {
+    font-size: 2.6rem;
+}
+
+/* Sign up and login buttons */
+.sign-up-link, .log-in-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hamburger menu icon styles */
+.hamburger-menu-icon {
+    font-size: 3.6rem;
+}
+
+/* Nav styles */
+nav {
+    width: 100%;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+    margin-top: 2rem;
+    padding-left: 2rem;
+
+    display: none;
+}
+
+/* Navigation item (li) styles */
+.nav-menu li {
+    list-style: none;
+
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+/* Navigation link (a) styles */
+.nav-link {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Navigation link active state */
+.active {
+    color: #F2D519;
+}
+
+/* Line next to navigation links */
+.line {
+    height: 1px;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ------------ */
+/* MAIN STYLES */
+/* ---------- */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Main flex div container */
+.main-flex-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+/* Sidebar styles */
+.sidebar {
+    padding: 2rem 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+}
+
+/* Sidebar menu item (li) styles */
+.sidebar-menu li {
+    list-style: none;
+}
+
+/* Add margin top to every li tag 
+except for first one */
+.sidebar-menu li:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+/* Social media link (a) styles */
+.soc-media-link {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+/* Content container styles */
+.content-container {
+    position: relative;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    flex: 1;
+    min-height: 100%;
+}
+
+/* Background circle styles */
+.bg-circle {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 20rem;
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+/* Background line decoration */
+.bg-line {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    width: 1px;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Text container styles */
+.text-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* First heading styles */
+.interior-design-portfolio {
+    font-weight: 400;
+    color: #F2D519;
+    letter-spacing: 1.5px;
+    margin: 2rem 0 0 1rem;
+}
+
+/* Motto styles - What you imagine, I create. */
+.motto {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+
+    color: #F2D519;
+    text-shadow: 1px 1px 15px rgba(242,213,25,0.60);
+
+    margin-top: 3rem;
+}
+
+/* Nothing is impossible - heading styles */
+.nothing-impossible {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 15px rgba(255,255,255,0.60);
+    letter-spacing: 1.2px;
+
+    margin: 3rem 0 0 1rem;
+}
+
+/* Paragraph container styles */
+/* Contains three paragraphs below 
+nothing is impossible heading */
+.paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    position: relative;
+
+    margin-top: 3rem;
+    padding-right: 2rem;
+}
+
+/* Paragraph styles */
+.paragraph-container p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+
+    margin-left: 2.5rem;
+}
+
+/* Yellow rectangle decoration on 
+the left side of paragraph container */
+.yellow-rectangle {
+    position: absolute;
+    width: 7px;
+    height: 100%;
+
+    background: #F2D519;
+    -webkit-box-shadow:0px 0px 20px 3px rgba(242,213,25,0.40);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(242,213,25,0.40);
+    box-shadow: 0px 0px 20px 3px rgba(242,213,25,0.40);
+}
+
+/* Delve into portfolio heading styles */
+.delve-into-portfolio {
+    font-weight: 400;
+    text-align: center;
+    color: #F2D519;
+
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+
+/* Swipe down button container */
+.swipe-down-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+}
+
+/* Swipe down button */
+.swipe-down {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+
+    /* border: 2px solid #F2D519; */
+    padding: 1rem 3rem;
+
+    -webkit-box-shadow:0px 0px 5px 3px rgba(242, 213, 25, 1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(242, 213, 25, 1);
+    box-shadow: 0px 0px 5px 3px rgba(242, 213, 25, 1);
+}
+
+/* Down arrow */
+.swipe-down i {
+    color: #F2D519;
+    margin-left: 1rem;
+}
+
+/* Mobile carousel styles */
+.mobile-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+/* Carousel image container */
+.img-container {
+    width: 85%;
+}
+
+/* Carousel image */
+.carousel-img {
+    width: 100%;
+}
+
+/* Arrow container styles */
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+/* Circle styles */
+.arrow-container i {
+    font-size: 1rem;
+}
+
+/* Arrow up / Arrow down styles */
+.arrow-container .fa-arrow-up, .arrow-container .fa-arrow-down {
+    font-size: 2.6rem;
+}
