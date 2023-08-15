@@ -321,7 +321,7 @@ the left side of paragraph container */
 }
 
 /* Swipe down button */
-.swipe-down {
+.swipe-down, .swipe-right {
     font-size: 1.6rem;
     text-decoration: none;
     color: #fff;
@@ -378,8 +378,12 @@ the left side of paragraph container */
     font-size: 2.6rem;
 }
 
-.owl-carousel, .right {
+.owl-carousel {
     display: none !important;
+}
+
+.swipe-right {
+    display: none;
 }
 
 /* ------------------------- */
@@ -522,19 +526,18 @@ the left side of paragraph container */
 /* ------------------------ */
 @media screen and (min-width: 1280px) {
     .sign-up-link, .log-in-link, .soc-media-link,
-    .right, .img-container, .owl-prev, .owl-next,
+    .swipe-right, .img-container, .owl-prev, .owl-next,
     .owl-page span, .nav-link {
         transition: 0.2s ease-in-out !important;
-    }
-
-    /* Appear Swipe Right button */
-    .right {
-        display: block !important;
     }
 
     /* Disappear Swipe Down button */
     .swipe-down {
         display: none;
+    }
+
+    .swipe-right {
+        display: block;
     }
 
     /* Hide overflow x */
@@ -601,7 +604,7 @@ the left side of paragraph container */
     }
 
     /* Swipe right button hover */
-    .right:hover {
+    .swipe-right:hover {
         transform: translateX(10px);
     }
 

@@ -1,4 +1,24 @@
 $(document).ready(function() {
+    ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 1500,
+        delay: 200
+    });
+
+    ScrollReveal().reveal('.header-btn-div', { origin: 'left' });
+    ScrollReveal().reveal('.hamburger-menu-icon', { origin: 'right' });
+    ScrollReveal().reveal('.sidebar-menu li', { interval: 200 });
+    ScrollReveal().reveal('.interior-design-portfolio, .nothing-impossible', { origin: 'left' });
+    ScrollReveal().reveal('.motto', { origin: 'right' });
+    ScrollReveal().reveal('.paragraph-container p', { origin: 'bottom', interval: 200, distance: '20px' });
+    ScrollReveal().reveal('.yellow-rectangle', { origin: 'left' });
+    ScrollReveal().reveal('.delve-into-portfolio', { origin: 'top' });
+    ScrollReveal().reveal('.swipe-down-container', { origin: 'left' });
+    ScrollReveal().reveal('.owl-carousel', { origin: 'left' });
+    ScrollReveal().reveal('.mobile-carousel', { origin: 'left' });
+    ScrollReveal().reveal('.nav-menu li', { origin: 'top', interval: 300 });
+    
     // Owl carousel
     $(".owl-carousel").owlCarousel({
         //Basic Speeds
